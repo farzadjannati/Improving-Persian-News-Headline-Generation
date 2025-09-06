@@ -92,9 +92,9 @@ We implemented and compared two distinct fine-tuning methodologies:
 2.  **CAP-LLM Inspired Multi-task Fine-tuning**: This is our primary contribution. We designed a custom trainer that incorporates a multi-task loss function:
 
 
-$$
+$
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{gen}} + \lambda_{\text{fact}} \mathcal{L}_{\text{fact}}
-$$
+$
 
 - $\mathcal{L}_{\text{gen}}$: The standard cross-entropy generation loss.  
 - $\mathcal{L}_{\text{fact}}$: A factual consistency contrastive loss that encourages the model to generate headlines that are semantically closer to the original article summary (positive sample) and further from a distorted or irrelevant summary (negative sample).  
