@@ -1,0 +1,41 @@
+{
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "lora_config": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none"
+  },
+  "training_config": {
+    "num_train_epochs": 1,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 5e-05,
+    "warmup_ratio": 0.0,
+    "fp16": true,
+    "gradient_checkpointing": true
+  },
+  "dataset_info": {
+    "train_samples": 20000,
+    "test_samples": 2000,
+    "max_length": 512
+  },
+  "evaluation_results": {
+    "rouge": {
+      "rouge1": 0.19590705050607415,
+      "rouge2": 0.04868311621045505,
+      "rougeL": 0.16433121975992532,
+      "rougeLsum": 0.16472739308747192
+    },
+    "bertscore": {
+      "precision": 0.6654820442199707,
+      "recall": 0.7549185752868652,
+      "f1": 0.7053452134132385
+    }
+  }
+}
