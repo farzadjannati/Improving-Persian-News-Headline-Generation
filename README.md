@@ -90,13 +90,13 @@ We implemented and compared two distinct fine-tuning methodologies:
 1.  **Standard Supervised Fine-Tuning (SFT)**: The Llama 3.1 8B Instruct model was fine-tuned using a standard cross-entropy loss on the `pn_summary` dataset. This serves as a strong baseline for our advanced approach.
 
 2.  **CAP-LLM Inspired Multi-task Fine-tuning**: This is our primary contribution. We designed a custom trainer that incorporates a multi-task loss function:
-    $$
-    \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{gen}} + \lambda_{\text{fact}} \mathcal{L}_{\text{fact}}
-    $$
-    -   $\mathcal{L}_{\text{gen}}$: The standard cross-entropy generation loss.
-    -   $\mathcal{L}_{\text{fact}}$: A factual consistency contrastive loss that encourages the model to generate headlines that are semantically closer to the original article summary (positive sample) and further from a distorted or irrelevant summary (negative sample).
-    -   $\lambda_{\text{fact}}$: A hyperparameter to balance the two loss components, set to `0.5` in our experiments.
+$$
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{gen}} + \lambda_{\text{fact}} \mathcal{L}_{\text{fact}}
+$$
 
+- $\mathcal{L}_{\text{gen}}$: The standard cross-entropy generation loss.  
+- $\mathcal{L}_{\text{fact}}$: A factual consistency contrastive loss that encourages the model to generate headlines that are semantically closer to the original article summary (positive sample) and further from a distorted or irrelevant summary (negative sample).  
+- $\lambda_{\text{fact}}$: A hyperparameter to balance the two loss components, set to `0.5` in our experiments.
 **LoRA Configuration**:
 -   `r`: 16
 -   `lora_alpha`: 32
