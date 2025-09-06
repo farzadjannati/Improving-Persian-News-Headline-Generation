@@ -90,6 +90,8 @@ We implemented and compared two distinct fine-tuning methodologies:
 1.  **Standard Supervised Fine-Tuning (SFT)**: The Llama 3.1 8B Instruct model was fine-tuned using a standard cross-entropy loss on the `pn_summary` dataset. This serves as a strong baseline for our advanced approach.
 
 2.  **CAP-LLM Inspired Multi-task Fine-tuning**: This is our primary contribution. We designed a custom trainer that incorporates a multi-task loss function:
+
+
 $$
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{gen}} + \lambda_{\text{fact}} \mathcal{L}_{\text{fact}}
 $$
