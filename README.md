@@ -51,8 +51,8 @@ To set up the environment and run this project, please follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/persian-headline-generation.git
-    cd persian-headline-generation
+    git clone https://github.com/farzadjannati/Improving-Persian-News-Headline-Generation.git
+    cd Improving-Persian-News-Headline-Generation
     ```
 
 2.  **Install the required dependencies:**
