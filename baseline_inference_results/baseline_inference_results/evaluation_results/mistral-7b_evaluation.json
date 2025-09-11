@@ -1,0 +1,9 @@
+{
+  "model": "mistral-7b",
+  "rouge1": 0.0,
+  "rouge2": 0.0,
+  "rougeL": 0.0,
+  "bertscore_precision": 0.6461858129501343,
+  "bertscore_recall": 0.7075730496644974,
+  "bertscore_f1": 0.6740239262580872
+}

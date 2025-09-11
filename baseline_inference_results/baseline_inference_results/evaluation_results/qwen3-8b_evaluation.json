@@ -1,0 +1,9 @@
+{
+  "model": "qwen3-8b",
+  "rouge1": 0.0,
+  "rouge2": 0.0,
+  "rougeL": 0.0,
+  "bertscore_precision": 0.6297038384158202,
+  "bertscore_recall": 0.6816349715897532,
+  "bertscore_f1": 0.6535321100793704
+}

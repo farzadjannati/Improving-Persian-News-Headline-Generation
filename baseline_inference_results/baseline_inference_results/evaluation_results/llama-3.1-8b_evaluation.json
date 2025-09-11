@@ -1,0 +1,9 @@
+{
+  "model": "llama-3.1-8b",
+  "rouge1": 0.0,
+  "rouge2": 0.0,
+  "rougeL": 0.0,
+  "bertscore_precision": 0.6404696464538574,
+  "bertscore_recall": 0.6997847121953964,
+  "bertscore_f1": 0.6679599648714065
+}

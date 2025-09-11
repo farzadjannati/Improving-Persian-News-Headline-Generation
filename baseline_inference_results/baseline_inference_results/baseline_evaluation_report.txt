@@ -1,0 +1,33 @@
+============================================================
+Persian News Headline Generation - Baseline Models Report
+============================================================
+Generated on: 2025-09-07 15:06:51
+
+NOTE: Evaluation based on first 100 samples only
+
+Model Performance Summary:
+----------------------------------------
+
+Model: gemma-3-4b
+  ROUGE-1: 0.0000
+  ROUGE-2: 0.0000
+  ROUGE-L: 0.0000
+  BERTScore F1: 0.6586
+
+Model: qwen3-8b
+  ROUGE-1: 0.0000
+  ROUGE-2: 0.0000
+  ROUGE-L: 0.0000
+  BERTScore F1: 0.6535
+
+Model: mistral-7b
+  ROUGE-1: 0.0000
+  ROUGE-2: 0.0000
+  ROUGE-L: 0.0000
+  BERTScore F1: 0.6740
+
+Model: llama-3.1-8b
+  ROUGE-1: 0.0000
+  ROUGE-2: 0.0000
+  ROUGE-L: 0.0000
+  BERTScore F1: 0.6680

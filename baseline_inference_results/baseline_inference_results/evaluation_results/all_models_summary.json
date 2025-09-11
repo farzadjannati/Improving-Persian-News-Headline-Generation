@@ -1,0 +1,38 @@
+[
+  {
+    "model": "gemma-3-4b",
+    "rouge1": 0.0,
+    "rouge2": 0.0,
+    "rougeL": 0.0,
+    "bertscore_precision": 0.6239266693592072,
+    "bertscore_recall": 0.6977939797299249,
+    "bertscore_f1": 0.6585578215973718
+  },
+  {
+    "model": "qwen3-8b",
+    "rouge1": 0.0,
+    "rouge2": 0.0,
+    "rougeL": 0.0,
+    "bertscore_precision": 0.6297038384158202,
+    "bertscore_recall": 0.6816349715897532,
+    "bertscore_f1": 0.6535321100793704
+  },
+  {
+    "model": "mistral-7b",
+    "rouge1": 0.0,
+    "rouge2": 0.0,
+    "rougeL": 0.0,
+    "bertscore_precision": 0.6461858129501343,
+    "bertscore_recall": 0.7075730496644974,
+    "bertscore_f1": 0.6740239262580872
+  },
+  {
+    "model": "llama-3.1-8b",
+    "rouge1": 0.0,
+    "rouge2": 0.0,
+    "rougeL": 0.0,
+    "bertscore_precision": 0.6404696464538574,
+    "bertscore_recall": 0.6997847121953964,
+    "bertscore_f1": 0.6679599648714065
+  }
+]

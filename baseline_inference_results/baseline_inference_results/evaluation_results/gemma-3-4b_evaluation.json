@@ -1,0 +1,9 @@
+{
+  "model": "gemma-3-4b",
+  "rouge1": 0.0,
+  "rouge2": 0.0,
+  "rougeL": 0.0,
+  "bertscore_precision": 0.6239266693592072,
+  "bertscore_recall": 0.6977939797299249,
+  "bertscore_f1": 0.6585578215973718
+}
