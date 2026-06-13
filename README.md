@@ -3,17 +3,19 @@
 # 🗞️ Improving Persian News Headline Generation
 ### LoRA Fine-tuning on Llama 3.1 with Fact-Aware Contrastive Learning
 
-<p>
+<p align="center">
   <i>A CAP-LLM inspired multi-task framework for generating factually consistent,<br>
   engaging, and trustworthy Persian news headlines ⚡</i>
 </p>
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
-[![Hugging Face Transformers](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-orange)](https://github.com/huggingface/transformers)
-[![PEFT](https://img.shields.io/badge/%F0%9F%A4%97-PEFT-yellow)](https://github.com/huggingface/peft)
-[![Model](https://img.shields.io/badge/Model-Llama%203.1%208B-9cf)](https://ai.meta.com/llama/)
-[![Dataset](https://img.shields.io/badge/Dataset-PN--Summary-success)](https://huggingface.co/datasets/HooshvareLab/pn_summary)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"></a>
+  <a href="https://github.com/huggingface/transformers"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Transformers-orange" alt="Transformers"></a>
+  <a href="https://github.com/huggingface/peft"><img src="https://img.shields.io/badge/%F0%9F%A4%97-PEFT-yellow" alt="PEFT"></a>
+  <a href="https://ai.meta.com/llama/"><img src="https://img.shields.io/badge/Model-Llama%203.1%208B-9cf" alt="Model"></a>
+  <a href="https://huggingface.co/datasets/HooshvareLab/pn_summary"><img src="https://img.shields.io/badge/Dataset-PN--Summary-success" alt="Dataset"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+</p>
 
 </div>
 
@@ -282,4 +284,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Built with ❤️ using **Llama 3.1**, **LoRA**, and **Hugging Face**
 
 </div>
-```
