@@ -263,6 +263,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 <p align="center">
-  built with ❤️ by Python, and Hugging Face
+  built with ❤️ by Pytorch, and hugging face
 </p>
-```
