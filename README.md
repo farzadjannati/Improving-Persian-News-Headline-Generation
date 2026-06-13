@@ -6,8 +6,6 @@
 
 ---
 
-# A fact-aware multi-task framework for generating factually consistent, engaging, and trustworthy Persian news headlines
-
 This repository contains the official implementation for the project on enhancing Persian news headline generation. We leverage the **Llama 3.1 8B Instruct** model, fine-tuned using Parameter-Efficient Fine-Tuning (PEFT) with LoRA, incorporating a multi-task learning objective with a contrastive loss to significantly improve factual consistency while maintaining high-quality, engaging headlines.
 
 <div align="left">
@@ -261,5 +259,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f3460,50:16213e,100:1a1a2e&height=120&section=footer&text=Bridging%20Generative%20AI%20%26%20Persian%20Journalism&fontSize=18&fontColor=a8d8ea&fontAlignY=65&animation=fadeIn" />
+<p align="center">
+  built with ❤️ by **Python**, and **Hugging Face**
+</p>
 ```
