@@ -4,8 +4,6 @@
 
 </div>
 
----
-
 This repository contains the official implementation for the project on enhancing Persian news headline generation. We leverage the **Llama 3.1 8B Instruct** model, fine-tuned using Parameter-Efficient Fine-Tuning (PEFT) with LoRA, incorporating a multi-task learning objective with a contrastive loss to significantly improve factual consistency while maintaining high-quality, engaging headlines.
 
 <div align="left">
