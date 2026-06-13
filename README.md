@@ -2,25 +2,23 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=220&section=header&text=%20Persian%20News%20Headline%20Generation&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=LoRA%20Fine-tuning%20on%20Llama%203.1%20with%20Fact-Aware%20Contrastive%20Learning&descSize=16&descAlignY=62&descColor=a8d8ea&animation=fadeIn" />
 
-<p align="center">
-  <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
-  <a href="https://github.com/huggingface/transformers"><img src="https://img.shields.io/badge/🤗_Transformers-orange?style=for-the-badge" alt="Transformers"></a>
-  <a href="https://github.com/huggingface/peft"><img src="https://img.shields.io/badge/🤗_PEFT-yellow?style=for-the-badge" alt="PEFT"></a>
-  <a href="https://ai.meta.com/llama/"><img src="https://img.shields.io/badge/Model-Llama%203.1%208B-9cf?style=for-the-badge&logo=meta&logoColor=white" alt="Model"></a>
-  <a href="https://huggingface.co/datasets/HooshvareLab/pn_summary"><img src="https://img.shields.io/badge/Dataset-PN--Summary-success?style=for-the-badge" alt="Dataset"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
-</p>
-
-<p align="center">
-  <i>A fact-aware multi-task framework for generating factually consistent,<br>
-  engaging, and trustworthy Persian news headlines </i>
-</p>
-
 </div>
 
 ---
 
 This repository contains the official implementation for the project on enhancing Persian news headline generation. We leverage the **Llama 3.1 8B Instruct** model, fine-tuned using Parameter-Efficient Fine-Tuning (PEFT) with LoRA, incorporating a multi-task learning objective with a contrastive loss to significantly improve factual consistency while maintaining high-quality, engaging headlines.
+
+<div align="left">
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/)
+[![Transformers](https://img.shields.io/badge/🤗_Transformers-orange?style=for-the-badge)](https://github.com/huggingface/transformers)
+[![PEFT](https://img.shields.io/badge/🤗_PEFT-yellow?style=for-the-badge)](https://github.com/huggingface/peft)
+[![Model](https://img.shields.io/badge/Model-Llama%203.1%208B-9cf?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com/llama/)
+[![Dataset](https://img.shields.io/badge/Dataset-PN--Summary-success?style=for-the-badge)](https://huggingface.co/datasets/HooshvareLab/pn_summary)
+[![Spring 2025](https://img.shields.io/badge/Semester-Spring%202025-blueviolet?style=for-the-badge)](https://github.com/farzadjannati/Improving-Persian-News-Headline-Generation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ## Abstract
 
