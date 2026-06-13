@@ -64,7 +64,7 @@ The end-to-end workflow of our project, from data collection to evaluation and f
 
 The technical architecture details the core components of our fine-tuning approach, showcasing the data flow through the Llama 3.1 model enhanced with LoRA adapters and our custom multi-task loss function.
 
-![Technical Architecture](images/technical_architecture.png)
+[![Technical Architecture](images/technical_architecture.png)](https://github.com/farzadjannati/Improving-Persian-News-Headline-Generation/blob/main/technical_architecture.png)
 
 ## Repository Structure
 
