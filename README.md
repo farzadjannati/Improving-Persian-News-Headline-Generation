@@ -58,13 +58,13 @@ Generating compelling and factually accurate news headlines is a significant cha
 
 The end-to-end workflow of our project, from data collection to evaluation and future extensions, is illustrated below.
 
-![Project Workflow](images/persian_headline_generation_workflow.png)
+[![Project Workflow](images/persian_headline_generation_workflow.png)]
 
 ## Technical Architecture
 
 The technical architecture details the core components of our fine-tuning approach, showcasing the data flow through the Llama 3.1 model enhanced with LoRA adapters and our custom multi-task loss function.
 
-[![Technical Architecture](images/technical_architecture.png)](https://github.com/farzadjannati/Improving-Persian-News-Headline-Generation/blob/main/technical_architecture.png)
+[![Technical Architecture](images/technical_architecture.png)]
 
 ## Repository Structure
 
