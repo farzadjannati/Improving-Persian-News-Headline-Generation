@@ -139,12 +139,12 @@ If you use this work, please cite this repository as:
 
 ```bibtex
 @misc{persian-headline-generation-2025,
-  author = {Your Name(s)},
+  author = {Farzad Jannati},
   title = {Improving Persian News Headline Generation using LoRA Fine-tuning on Llama 3.1},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/your-username/persian-headline-generation}},
+  howpublished = {\url{https://github.com/farzadjannati/persian-headline-generation}},
 }
 ```
 
