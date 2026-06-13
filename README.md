@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=220&section=header&text=🗞️%20Persian%20News%20Headline%20Generation&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=LoRA%20Fine-tuning%20on%20Llama%203.1%20with%20Fact-Aware%20Contrastive%20Learning&descSize=16&descAlignY=62&descColor=a8d8ea&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=220&section=header&text=%20Persian%20News%20Headline%20Generation&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=LoRA%20Fine-tuning%20on%20Llama%203.1%20with%20Fact-Aware%20Contrastive%20Learning&descSize=16&descAlignY=62&descColor=a8d8ea&animation=fadeIn" />
 
 <p align="center">
   <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
@@ -13,7 +13,7 @@
 
 <p align="center">
   <i>A fact-aware multi-task framework for generating factually consistent,<br>
-  engaging, and trustworthy Persian news headlines ⚡</i>
+  engaging, and trustworthy Persian news headlines </i>
 </p>
 
 </div>
