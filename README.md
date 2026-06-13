@@ -56,7 +56,9 @@ Generating compelling and factually accurate news headlines is a significant cha
 
 ## Project Workflow
 
-<img width="700" height="2000" alt="IEEE_Project_Workflow" src="https://github.com/user-attachments/assets/f78069c1-b293-47a3-8085-7e51d40a1581" />
+<p align="center">
+  <img width="420" alt="IEEE_Project_Workflow" src="https://github.com/user-attachments/assets/f78069c1-b293-47a3-8085-7e51d40a1581" />
+</p>
 
 ## Technical Architecture
 
