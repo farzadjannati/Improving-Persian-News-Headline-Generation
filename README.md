@@ -1,9 +1,30 @@
-# Improving Persian News Headline Generation using LoRA Fine-tuning on Llama 3.1
+<div align="center">
+
+# 🗞️ Improving Persian News Headline Generation
+### LoRA Fine-tuning on Llama 3.1 with Fact-Aware Contrastive Learning
+
+<p>
+  <i>A CAP-LLM inspired multi-task framework for generating factually consistent,<br>
+  engaging, and trustworthy Persian news headlines ⚡</i>
+</p>
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![Hugging Face Transformers](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-orange)](https://github.com/huggingface/transformers)
 [![PEFT](https://img.shields.io/badge/%F0%9F%A4%97-PEFT-yellow)](https://github.com/huggingface/peft)
+[![Model](https://img.shields.io/badge/Model-Llama%203.1%208B-9cf)](https://ai.meta.com/llama/)
+[![Dataset](https://img.shields.io/badge/Dataset-PN--Summary-success)](https://huggingface.co/datasets/HooshvareLab/pn_summary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
+
+---
+
+> **University of Tehran** — Course Project (Large Language Models)
+>
+> **Authors:** Farzad Jannati · Shahriar Rahimi Rad · Abolfazl Assarian Nejad
+> 📧 `farzadjannati@ut.ac.ir` · `rahimirad@ut.ac.ir` · `abolfazl.assarian@ut.ac.ir`
+
+---
 
 This repository contains the official implementation for the project on enhancing Persian news headline generation. We leverage the **Llama 3.1 8B Instruct** model, fine-tuned using Parameter-Efficient Fine-Tuning (PEFT) with LoRA. Our primary approach is inspired by the **CAP-LLM** methodology, incorporating a multi-task learning objective with a contrastive loss to significantly improve factual consistency while maintaining high-quality, engaging headlines.
 
@@ -15,15 +36,20 @@ Generating compelling and factually accurate news headlines is a significant cha
 1. [Key Features](#key-features)
 2. [Project Workflow](#project-workflow)
 3. [Technical Architecture](#technical-architecture)
-4. [Installation](#installation)
-5. [Dataset](#dataset)
-6. [Training Process](#training-process)
-7. [Evaluation](#evaluation)
-8. [Results](#results)
-9. [Future Work](#future-work)
-10. [Citation](#citation)
-11. [Acknowledgements](#acknowledgements)
-12. [License](#license)
+4. [Repository Structure](#repository-structure)
+5. [Installation](#installation)
+6. [Dataset](#dataset)
+7. [Training Process](#training-process)
+8. [Evaluation](#evaluation)
+9. [Results](#results)
+10. [Key Concepts Demonstrated](#key-concepts-demonstrated)
+11. [Technologies Used](#technologies-used)
+12. [Future Work](#future-work)
+13. [Citation](#citation)
+14. [Acknowledgements](#acknowledgements)
+15. [Author](#author)
+16. [Support](#support)
+17. [License](#license)
 
 ## Key Features
 
@@ -38,6 +64,32 @@ Generating compelling and factually accurate news headlines is a significant cha
 The end-to-end workflow of our project, from data collection to evaluation and future extensions, is illustrated below.
 
 ![Project Workflow](persian_headline_generation_workflow.png)
+
+## Technical Architecture
+
+The technical architecture details the core components of our fine-tuning approach, showcasing the data flow through the Llama 3.1 model enhanced with LoRA adapters and our custom multi-task loss function.
+
+![Technical Architecture](technical_architecture.png)
+
+## Repository Structure
+
+
+│
+├── notebooks/
+│   ├── PersianTitleGenerator.ipynb          # Proposed CAP-LLM inspired model
+│   ├── Title_Generator_Abolfazl.ipynb       # Standard SFT baseline
+│   └── baseline_inference.ipynb             # Zero-shot baseline evaluation
+│
+├── images/
+│   ├── persian_headline_generation_workflow.png
+│   └── technical_architecture.png
+│
+├── configs/
+│   └── PersianTitleGenerator.json           # LoRA & training configuration
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
 
 ## Technical Architecture
 
@@ -98,6 +150,7 @@ $$
 - $\mathcal{L}_{\text{gen}}$: The standard cross-entropy generation loss.  
 - $\mathcal{L}_{\text{fact}}$: A factual consistency contrastive loss that encourages the model to generate headlines that are semantically closer to the original article summary (positive sample) and further from a distorted or irrelevant summary (negative sample).  
 - $\lambda_{\text{fact}}$: A hyperparameter to balance the two loss components, set to `0.5` in our experiments.
+
 **LoRA Configuration**:
 -   `r`: 16
 -   `lora_alpha`: 32
@@ -119,19 +172,48 @@ Below is a comparison of our fine-tuned models against several baseline models. 
 | Model                                        | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore F1 | Factual Consistency | Style Score |
 | -------------------------------------------- | :-----: | :-----: | :-----: | :----------: | :-----------------: | :---------: |
 | **Baselines**                                |         |         |         |              |                     |             |
-| Gemma 3 4B                                   |   TBD   |   TBD   |   TBD   |     TBD      |         TBD         |     TBD     |
-| Qwen 3 8B                                    |   TBD   |   TBD   |   TBD   |     TBD      |         TBD         |     TBD     |
-| Mistral 7B                                   |   TBD   |   TBD   |   TBD   |     TBD      |         TBD         |     TBD     |
-| Llama 3 8B (Base)                            |   TBD   |   TBD   |   TBD   |     TBD      |         TBD         |     TBD     |
+| Gemma 3 4B                                   |  0.000  |  0.000  |  0.000  |    0.6586    |         TBD         |     TBD     |
+| Qwen 3 8B                                    |  0.000  |  0.000  |  0.000  |    0.6535    |         TBD         |     TBD     |
+| Mistral 7B                                   |  0.000  |  0.000  |  0.000  |    0.6740    |         TBD         |     TBD     |
+| Llama 3.1 8B (Base)                          |  0.000  |  0.000  |  0.000  |    0.6680    |         TBD         |     TBD     |
 | **Our Models**                               |         |         |         |              |                     |             |
 | Llama 3.1 8B + LoRA (Standard SFT)           |  0.007  |  0.000  |  0.007  |    0.802     |         TBD         |     TBD     |
 | **Llama 3.1 8B + LoRA (CAP-LLM Inspired)**     | **0.196** | **0.049** | **0.164** |  **0.705**   |         TBD         |     TBD     |
 
 *Note: BERTScore F1 for the standard SFT is higher, but its ROUGE scores are near zero, indicating a potential issue with repetitive or non-overlapping generations despite semantic similarity. The CAP-LLM approach provides a much better balance.*
 
+## Key Concepts Demonstrated
+
+-   Parameter-efficient fine-tuning (PEFT) with LoRA on large language models
+-   Fact-aware multi-task learning with contrastive objectives
+-   Custom `ContextAwareTrainer` with overridden `compute_loss`
+-   Hallucination mitigation in abstractive summarization
+-   Persian NLP preprocessing pipelines (normalization, character correction, noise removal)
+-   Zero-shot vs. fine-tuned model benchmarking
+-   ROUGE vs. BERTScore discrepancy analysis in abstractive tasks
+-   BFloat16 mixed-precision training on NVIDIA A100
+
+## Technologies Used
+
+| Category               | Tools                                   |
+| ---------------------- | --------------------------------------- |
+| Large Language Models  | Llama 3.1 8B Instruct                    |
+| Fine-Tuning            | PEFT, LoRA                               |
+| Frameworks             | Hugging Face Transformers, TRL          |
+| Deep Learning          | PyTorch                                  |
+| Persian NLP            | Hazm                                     |
+| Evaluation             | ROUGE, BERTScore, Evaluate              |
+| Visualization          | Matplotlib                               |
+| Compute Environment    | Google Colab (NVIDIA A100)              |
+| Programming Language    | Python                                  |
+
 ## Future Work
 
-Our primary direction for future work is the implementation of a **Click-based Personalization and Training (CPT)** system. This will involve modeling user preferences based on their click behavior (long-term and short-term interests) to generate headlines that are not only factually accurate but also personally tailored to each user's unique stylistic and content preferences, as inspired by recent literature like the SCAPE paper.
+Our primary direction for future work is the implementation of a **Click-based Personalization and Training (CPT)** system. This will involve modeling user preferences based on their click behavior (long-term and short-term interests) to generate headlines that are not only factually accurate but also personally tailored to each user's unique stylistic and content preferences, as inspired by recent literature like the SCAPE and LOLA papers.
+
+Additional directions include:
+-   **In-Context Learning (ICL)**: Few-shot prompting with Chain-of-Thought to further improve factual consistency without additional fine-tuning.
+-   **Advanced Automated Evaluation**: Implementing FactCC and dedicated style classifiers for scalable factual verification beyond n-gram metrics.
 
 ## Citation
 
@@ -139,12 +221,12 @@ If you use this work, please cite this repository as:
 
 ```bibtex
 @misc{persian-headline-generation-2025,
-  author = {Farzad Jannati},
+  author = {Farzad Jannati and Shahriar Rahimi Rad and Abolfazl Assarian Nejad},
   title = {Improving Persian News Headline Generation using LoRA Fine-tuning on Llama 3.1},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/farzadjannati/persian-headline-generation}},
+  howpublished = {\url{https://github.com/farzadjannati/Improving-Persian-News-Headline-Generation}},
 }
 ```
 
@@ -155,6 +237,28 @@ If you use this work, please cite this repository as:
 - We thank the developers of the **PN-Summary** dataset for providing the data for this research.
 - This project utilizes the powerful **Llama 3.1 8B Instruct** model developed by Meta AI.
 
+Author
+Farzad Jannati
+
+Master’s Student · University of Tehran
+
+Project collaborators: Shahriar Rahimi Rad · Abolfazl Assarian Nejad
+
+Interested in:
+
+Large Language Models
+Natural Language Processing
+Persian NLP
+Fact-Aware Text Generation
+Parameter-Efficient Fine-Tuning
+
+Support
+If you find this repository useful, consider giving it a ⭐️
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+Bridging advanced generative AI and the linguistic needs of Persian journalism 🗞️⚡
+
+Built with ❤️ using Llama 3.1, LoRA, and Hugging Face
