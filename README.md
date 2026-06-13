@@ -56,10 +56,7 @@ Generating compelling and factually accurate news headlines is a significant cha
 
 ## Project Workflow
 
-The end-to-end workflow of our project, from data collection to evaluation and future extensions, is illustrated below.
-
-<img width="576" height="1861" alt="persian_headline_generation_workflow" src="https://github.com/user-attachments/assets/9d2d2424-8934-406c-98b1-e02ea383939d" />
-
+<img width="1908" height="5417" alt="IEEE_Project_Workflow" src="https://github.com/user-attachments/assets/f78069c1-b293-47a3-8085-7e51d40a1581" />
 
 
 ## Technical Architecture
